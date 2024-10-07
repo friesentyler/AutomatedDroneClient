@@ -1,5 +1,0 @@
-menuconfig DRIVERS_POWER_MONITOR_INA220
-	bool "ina220"
-	default n
-	---help---
-		Enable support for ina220

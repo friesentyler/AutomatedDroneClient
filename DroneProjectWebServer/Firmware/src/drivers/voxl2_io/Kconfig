@@ -1,5 +1,0 @@
-menuconfig DRIVERS_VOXL2_IO
-	bool "voxl2_io"
-	default n
-	---help---
-		Enable support for voxl2_io

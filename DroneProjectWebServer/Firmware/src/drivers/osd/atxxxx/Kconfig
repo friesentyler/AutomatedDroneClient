@@ -1,5 +1,0 @@
-menuconfig DRIVERS_OSD_ATXXXX
-	bool "atxxxx"
-	default n
-	---help---
-		Enable support for atxxxx

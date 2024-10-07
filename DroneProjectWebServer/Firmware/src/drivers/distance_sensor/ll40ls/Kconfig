@@ -1,5 +1,0 @@
-menuconfig DRIVERS_DISTANCE_SENSOR_LL40LS
-	bool "ll40ls"
-	default n
-	---help---
-		Enable support for ll40ls

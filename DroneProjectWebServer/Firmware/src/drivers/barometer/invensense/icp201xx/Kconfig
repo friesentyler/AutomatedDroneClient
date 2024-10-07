@@ -1,5 +1,0 @@
-menuconfig DRIVERS_BAROMETER_INVENSENSE_ICP201XX
-	bool "icp201xx"
-	default n
-	---help---
-		Enable support for icp201xx

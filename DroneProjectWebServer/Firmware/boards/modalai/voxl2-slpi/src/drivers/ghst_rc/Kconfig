@@ -1,5 +1,0 @@
-menuconfig DRIVERS_GHST_RC
-	bool "ghst_rc"
-	default n
-	---help---
-		Enable support for ghst rc

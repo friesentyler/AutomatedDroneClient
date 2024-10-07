@@ -1,3 +1,0 @@
-menu "Vtrantech"
-rsource "*/Kconfig"
-endmenu #Vtrantech

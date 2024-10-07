@@ -1,3 +1,0 @@
-menu "Goertek"
-rsource "*/Kconfig"
-endmenu #Goertek

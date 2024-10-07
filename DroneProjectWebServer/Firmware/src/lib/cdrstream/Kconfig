@@ -1,5 +1,0 @@
-config LIB_CDRSTREAM
-	bool
-	default n
-	---help---
-		Enable CDR stream serializer library

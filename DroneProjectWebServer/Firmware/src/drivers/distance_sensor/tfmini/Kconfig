@@ -1,5 +1,0 @@
-menuconfig DRIVERS_DISTANCE_SENSOR_TFMINI
-	bool "tfmini"
-	default n
-	---help---
-		Enable support for tfmini

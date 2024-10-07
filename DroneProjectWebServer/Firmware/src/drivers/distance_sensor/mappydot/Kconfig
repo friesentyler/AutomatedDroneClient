@@ -1,5 +1,0 @@
-menuconfig DRIVERS_DISTANCE_SENSOR_MAPPYDOT
-	bool "mappydot"
-	default n
-	---help---
-		Enable support for mappydot

@@ -1,5 +1,0 @@
-menuconfig DRIVERS_DSHOT
-	bool "dshot"
-	default n
-	---help---
-		Enable support for dshot

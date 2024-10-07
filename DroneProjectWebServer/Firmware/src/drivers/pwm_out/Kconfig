@@ -1,5 +1,0 @@
-menuconfig DRIVERS_PWM_OUT
-	bool "pwm_out"
-	default n
-	---help---
-		Enable support for pwm_out

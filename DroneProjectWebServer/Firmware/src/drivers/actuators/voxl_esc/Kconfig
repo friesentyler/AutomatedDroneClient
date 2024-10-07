@@ -1,5 +1,0 @@
-menuconfig DRIVERS_ACTUATORS_VOXL_ESC
-	bool "voxl_esc"
-	default n
-	---help---
-		Enable support for voxl_esc

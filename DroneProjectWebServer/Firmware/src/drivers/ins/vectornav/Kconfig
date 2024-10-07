@@ -1,5 +1,0 @@
-menuconfig DRIVERS_INS_VECTORNAV
-	bool "vectornav"
-	default n
-	---help---
-		Enable support for vectornav

@@ -1,3 +1,0 @@
-menu "InvenSense"
-rsource "*/Kconfig"
-endmenu #InvenSense

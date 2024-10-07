@@ -1,5 +1,0 @@
-menuconfig DRIVERS_PPS_CAPTURE
-	bool "pps_capture"
-	default n
-	---help---
-		Enable support for pps_capture

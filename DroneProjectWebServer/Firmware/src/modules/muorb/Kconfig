@@ -1,4 +1,0 @@
-menu "MUORB"
-depends on PLATFORM_QURT || PLATFORM_POSIX
-rsource "*/Kconfig"
-endmenu #MUORB

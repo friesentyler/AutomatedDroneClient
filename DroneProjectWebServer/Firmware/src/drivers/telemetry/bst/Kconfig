@@ -1,5 +1,0 @@
-menuconfig DRIVERS_TELEMETRY_BST
-	bool "bst"
-	default n
-	---help---
-		Enable support for bst

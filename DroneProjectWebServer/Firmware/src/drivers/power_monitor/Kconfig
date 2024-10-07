@@ -1,3 +1,0 @@
-menu "Power monitor"
-rsource "*/Kconfig"
-endmenu

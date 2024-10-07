@@ -1,5 +1,0 @@
-menuconfig DRIVERS_TONE_ALARM
-	bool "tone_alarm"
-	default n
-	---help---
-		Enable support for tone_alarm

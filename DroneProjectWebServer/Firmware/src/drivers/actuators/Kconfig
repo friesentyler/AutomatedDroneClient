@@ -1,3 +1,0 @@
-menu "actuators"
-rsource "*/Kconfig"
-endmenu #actuators

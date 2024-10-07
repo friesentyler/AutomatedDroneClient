@@ -1,3 +1,0 @@
-menu "Isentek"
-rsource "*/Kconfig"
-endmenu #Isentek

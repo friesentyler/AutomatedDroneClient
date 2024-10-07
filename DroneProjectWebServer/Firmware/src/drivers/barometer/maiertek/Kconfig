@@ -1,3 +1,0 @@
-#menu "Maiertek"
-rsource "*/Kconfig"
-#endmenu #Maiertek

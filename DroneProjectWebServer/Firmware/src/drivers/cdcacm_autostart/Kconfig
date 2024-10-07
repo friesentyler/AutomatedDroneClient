@@ -1,6 +1,0 @@
-menuconfig DRIVERS_CDCACM_AUTOSTART
-	bool "cdcacm_autostart"
-	default n
-	depends on MODULES_MAVLINK
-	---help---
-		Enable support for cdcacm_autostart

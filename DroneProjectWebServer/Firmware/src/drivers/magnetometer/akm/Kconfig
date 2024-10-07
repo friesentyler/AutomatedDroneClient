@@ -1,3 +1,0 @@
-menu "AKM"
-    rsource "*/Kconfig"
-endmenu

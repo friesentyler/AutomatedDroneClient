@@ -1,5 +1,0 @@
-menuconfig DRIVERS_IMU_INVENSENSE_MPU9250
-	bool "mpu9250"
-	default n
-	---help---
-		Enable support for mpu9250

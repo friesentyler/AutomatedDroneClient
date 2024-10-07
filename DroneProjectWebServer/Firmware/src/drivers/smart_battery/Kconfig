@@ -1,3 +1,0 @@
-menu "Smart battery"
-rsource "*/Kconfig"
-endmenu #Smart battery

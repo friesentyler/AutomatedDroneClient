@@ -1,5 +1,0 @@
-menuconfig DRIVERS_BAROMETER_LPS33HW
-	bool "lps33hw"
-	default n
-	---help---
-		Enable support for lps33hw

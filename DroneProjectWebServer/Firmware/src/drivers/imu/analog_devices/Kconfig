@@ -1,3 +1,0 @@
-menu "Analog Devices"
-rsource "*/Kconfig"
-endmenu #Analog Devices

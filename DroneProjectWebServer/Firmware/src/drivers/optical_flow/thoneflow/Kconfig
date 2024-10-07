@@ -1,5 +1,0 @@
-menuconfig DRIVERS_OPTICAL_FLOW_THONEFLOW
-	bool "thoneflow"
-	default n
-	---help---
-		Enable support for thoneflow

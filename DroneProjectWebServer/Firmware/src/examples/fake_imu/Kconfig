@@ -1,5 +1,0 @@
-menuconfig EXAMPLES_FAKE_IMU
-	bool "fake_imu"
-	default n
-	---help---
-		Enable support for fake_imu

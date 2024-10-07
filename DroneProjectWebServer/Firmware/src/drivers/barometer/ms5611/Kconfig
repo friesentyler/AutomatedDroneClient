@@ -1,5 +1,0 @@
-menuconfig DRIVERS_BAROMETER_MS5611
-	bool "ms5611"
-	default n
-	---help---
-		Enable support for ms5611

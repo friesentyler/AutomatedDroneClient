@@ -1,5 +1,0 @@
-menuconfig DRIVERS_DISTANCE_SENSOR_TERARANGER
-	bool "teraranger"
-	default n
-	---help---
-		Enable support for teraranger
