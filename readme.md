@@ -1,3 +1,20 @@
+# Drone Web Server
+* this project aims to create a webserver that can automate a drone's movements using a google map interface
+* Take a look below to see the already implemented functionality
+* It uses the mavlink protocol to send commands to a drone via a Django web server
+* The frontend uses React and the google maps library to send commands to the drone 
+
+When the project is complete the webserver will run on the cloud where anyone with the proper credentials 
+can connect and send commands to the drone. The drone will be connected to the internet via cellular towers so that
+the operator can be hundred of miles away and still issue commands to the drone.\
+
+# Some clips of the software in action
+
+
+
+
+
+# Helpful instructions for building and running the project
 Run these commands before opening jmavsim
 export JAVA_HOME=$(/usr/libexec/java_home -v 15)
 export PATH=$JAVA_HOME/bin:$PATH
@@ -19,5 +36,5 @@ in the future I will most likely move to gazebo, it appears to be more modern
 then run the webserver as normal
 python manage.py runserver
 
-#to run the frontend we need to move to the drone-webserver-frontend folder and execute
+to run the frontend we need to move to the drone-webserver-frontend folder and execute
 npm start
