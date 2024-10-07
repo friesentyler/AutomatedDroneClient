@@ -15,7 +15,9 @@ the operator can be hundred of miles away and still issue commands to the drone.
 
 
 # Helpful instructions for building and running the project
-Run these commands before opening jmavsim
+
+### Project Backend (Django webserver)
+Run these commands before opening jmavsim (for simulating the drone)
 `export JAVA_HOME=$(/usr/libexec/java_home -v 15)
 export PATH=$JAVA_HOME/bin:$PATH
 make px4_sitl_default jmavsim`
@@ -36,5 +38,6 @@ in the future I will most likely move to gazebo, it appears to be more modern
 then run the webserver as normal
 python manage.py runserver
 
+### Project Frontend (React + Google maps library)
 to run the frontend we need to move to the drone-webserver-frontend folder and execute
 `npm start`
