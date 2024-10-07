@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# UUV default parameters.
+#
+# NOTE: Script variables are declared/initialized/unset in the rcS script.
+#
+
+set VEHICLE_TYPE uuv
+
+# MAV_TYPE_SUBMARINE 12
+param set-default MAV_TYPE 12
