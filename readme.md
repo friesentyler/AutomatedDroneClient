@@ -14,13 +14,14 @@ the operator can be hundred of miles away and still issue commands to the drone.
 ![high_quality_output](https://github.com/user-attachments/assets/d612e68b-2ab1-439c-a31d-b96b05630627)
 
 ### Takeoff
-![output](https://github.com/user-attachments/assets/293c3b22-c451-402c-a450-fcc6afdb4613)
+![high_quality_output](https://github.com/user-attachments/assets/94455efd-4c0f-4bac-b757-6eaefee673e9)
 
 ### Goto
-![output](https://github.com/user-attachments/assets/c22fefa1-a34b-46cb-8879-69ac2ef95ca8)
+![high_quality_output](https://github.com/user-attachments/assets/6192b267-4eaa-4515-b91b-8dd9cbfcb887)
 
 ### Land
-![output](https://github.com/user-attachments/assets/ac3f1745-5636-4012-a0db-90e6d406bdef)
+![high_quality_output](https://github.com/user-attachments/assets/01c14f71-025a-453b-a831-fc7335fef337)
+
 
 
 # Helpful instructions for building and running the project
