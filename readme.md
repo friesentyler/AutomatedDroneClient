@@ -11,7 +11,8 @@ the operator can be hundred of miles away and still issue commands to the drone.
 # Some clips of the software in action
 
 ### Frontend
-![output](https://github.com/user-attachments/assets/75a75e61-6f53-407a-8199-69d559236e75)
+![output](https://github.com/user-attachments/assets/2dd7088e-a4b2-42dc-a420-5f2c1aa4985e)
+
 
 
 
