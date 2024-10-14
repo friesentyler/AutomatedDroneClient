@@ -50,12 +50,14 @@ function MapClickEvent({coordinates}) {
 
 
         if (map && window.google && window.google.maps) {
-            listener = map.addListener("click", (e) => {
+            listener = map.addListener("click", async (e) => {
 
+                // delete the line that already exists (if there is one)
                 if (flightPath.current) {
                     flightPath.current.setMap(null);
                 }
 
+                // draw the line to the clicked coordinates on the map
                 console.log(coordinates);
                 console.log(e.latLng.toJSON().lat, e.latLng.toJSON().lng);
                 flightPlanCoordinates = [
@@ -69,6 +71,13 @@ function MapClickEvent({coordinates}) {
                     strokeWeight: 2,
                 });
                 flightPath.current.setMap(map);
+
+                // sends a request to the backend telling the drone to go to the specified coordinates from the click
+                const baseUrl = "http://127.0.0.1:8000"
+                const urlWithPath = baseUrl + `/goto/${e.latLng.toJSON().lat}/${e.latLng.toJSON().lng}`;
+                console.log(urlWithPath);
+                let response = await fetch(baseUrl + "/cancel")
+                response = await fetch(urlWithPath);
 
                 return () => {
                     console.log("unmounted")
