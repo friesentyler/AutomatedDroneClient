@@ -36,6 +36,8 @@ CORS_ALLOWED_ORIGINS = [
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'channels',
+    'DroneProjectWebServer',
     'corsheaders',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -73,7 +75,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DroneProjectWebServer.wsgi.application'
+#WSGI_APPLICATION = 'DroneProjectWebServer.wsgi.application'
+ASGI_APPLICATION = 'DroneProjectWebServer.asgi.application'
 
 
 # Database
