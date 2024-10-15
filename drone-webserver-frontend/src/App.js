@@ -134,7 +134,7 @@ function CircleCreatorButton({coordinates}) {
 }
 
 function App() {
-    const [droneCoordinates, setDroneCoordinates] = useState({lat: -33.860664, lng: 151.208138});
+    const [droneCoordinates, setDroneCoordinates] = useState({lat: 47.3977413, lng: 8.545592899999999});
 
     function clicked() {
         let newLat = droneCoordinates.lat
@@ -142,6 +142,32 @@ function App() {
         setDroneCoordinates({lat: newLat + 0.001, lng: newLng + 0.001})
     }
 
+    useEffect(() => {
+
+        const socket = new WebSocket('ws://127.0.0.1:8000/ws/gps/');
+
+        socket.onopen = function (event) {
+            console.log("WebSocket is open now.")
+        }
+
+        socket.onmessage = function (event) {
+            const gpsData = JSON.parse(event.data);
+            setDroneCoordinates({lat: Number(gpsData.lat), lng: Number(gpsData.long)})
+            console.log(gpsData.lat + " " + gpsData.long)
+        }
+
+        socket.onclose = function (event) {
+            console.log('WebSocket is closed now.');
+        };
+
+        socket.onerror = function (error) {
+            console.log('WebSocket error:', error);
+        };
+
+        return () => {
+            socket.close();
+        };
+    }, []);
 
     return (
         <div className="App">

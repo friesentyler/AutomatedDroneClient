@@ -45,8 +45,8 @@ https://docs.px4.io/main/en/sim_jmavsim/index.html
 
 in the future I will most likely move to gazebo, it appears to be more modern
 
-then run the webserver as normal
-python manage.py runserver
+then run the webserver using daphne since we need an async capable webserver to handle websockets
+daphne -p 8000 DroneProjectWebServer.asgi:application
 
 ### Project Frontend (React + Google maps library)
 to run the frontend we need to move to the drone-webserver-frontend folder and execute
