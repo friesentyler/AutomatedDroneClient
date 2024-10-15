@@ -133,6 +133,23 @@ function CircleCreatorButton({coordinates}) {
     );
 }
 
+function TakeOffButton () {
+
+    async function takeOff() {
+        const baseUrl = "http://127.0.0.1:8000"
+        const urlWithPath = baseUrl + `/takeoff/`;
+        const response = await fetch(urlWithPath);
+    }
+
+    return (
+        <>
+            <button onClick={takeOff}>
+                Takeoff
+            </button>
+        </>
+    );
+}
+
 function App() {
     const [droneCoordinates, setDroneCoordinates] = useState({lat: 47.3977413, lng: 8.545592899999999});
 
@@ -188,6 +205,7 @@ function App() {
                         </Map>
                     </div>
                     <CircleCreatorButton coordinates={droneCoordinates}/>
+                    <TakeOffButton/>
                 </APIProvider>
                 <a
                     className="App-link"
