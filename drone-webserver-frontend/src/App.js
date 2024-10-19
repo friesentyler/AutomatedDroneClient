@@ -4,6 +4,7 @@ import {useEffect, useState, useRef} from "react";
 import droneImgSrc from './images/drone.png';
 
 const MarkerComponent = ({position}) => {
+    // IT APPEARS THAT GOOGLE MAPS WILL ONLY UPDATE THE MARKER POSITION IF IT NOTICES A DIFFERENCE OF AT LEAST 0.00001
     const map = useMap();
     const markerRef = useRef(null); // Use ref to store the marker instance
 
@@ -39,6 +40,7 @@ const MarkerComponent = ({position}) => {
 
     return null;
 };
+
 
 function MapClickEvent({coordinates}) {
     const map = useMap();
@@ -185,8 +187,8 @@ function App() {
 
         socket.onmessage = function (event) {
             const gpsData = JSON.parse(event.data);
-            setDroneCoordinates({lat: Number(gpsData.lat), lng: Number(gpsData.long)})
             console.log(gpsData.lat + " " + gpsData.long)
+            setDroneCoordinates({lat: Number(gpsData.lat), lng: Number(gpsData.long)})
         }
 
         socket.onclose = function (event) {
@@ -197,9 +199,10 @@ function App() {
             console.log('WebSocket error:', error);
         };
 
-        return () => {
+        /*return () => {
+            //console.log('WebSocket closed.');
             socket.close();
-        };
+        };*/
     }, []);
 
     return (

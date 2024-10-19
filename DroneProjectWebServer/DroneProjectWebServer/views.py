@@ -213,15 +213,11 @@ async def cancel(request):
         print(f"Failed to stop offboard mode: {error._result.result}")
     return HttpResponse("success")
 
-'''async def get_drone_coordinates(request):
-    # construct gps data to return to client
-    gps_data = {
-        'lat': 0,
-        'long': 0
-    }
-
+async def position_data(request):
     drone = System()
     await drone.connect(system_address="udp://:14540")
+
+    # status_text_task = asyncio.ensure_future(print_status_text(drone))
 
     print("Waiting for drone to connect...")
     async for state in drone.core.connection_state():
@@ -234,15 +230,12 @@ async def cancel(request):
         if health.is_global_position_ok and health.is_home_position_ok and health.is_local_position_ok and health.is_gyrometer_calibration_ok and health.is_accelerometer_calibration_ok:
             print("-- Global position estimate OK")
             break
-
-    print("Retrieving GPS position data...")
+    gps_data = {}
     async for position in drone.telemetry.position():
-        print(f"Latitude: {position.latitude_deg}, "
-              f"Longitude: {position.longitude_deg}, "
-              f"Absolute Altitude: {position.absolute_altitude_m} m, "
-              f"Relative Altitude: {position.relative_altitude_m} m")
-        # update gps positional data which gets returned
         gps_data['lat'] = position.latitude_deg
         gps_data['long'] = position.longitude_deg
-
-    return JsonResponse(gps_data)'''
+        print(f"Sending GPS Data: {gps_data}")
+        break
+    response = HttpResponse()
+    response.content = str(gps_data['lat']) + " " + str(gps_data['long'])
+    return response

@@ -26,5 +26,6 @@ urlpatterns = [
     path('goto/<str:lat>/<str:long>/', views.goto, name="goto"),
     path('altadjust/<str:newalt>/', views.altadjust, name='altadjust'),
     path('cancel/', views.cancel, name='cancel'),
-    path('circle/<str:radius>/<str:lat>/<str:long>/', views.circle, name='circle')
+    path('circle/<str:radius>/<str:lat>/<str:long>/', views.circle, name='circle'),
+    path('position/', views.position_data, name='position_data')
 ]
