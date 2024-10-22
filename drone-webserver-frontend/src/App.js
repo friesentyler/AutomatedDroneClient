@@ -204,11 +204,10 @@ function App() {
             socket.close();
         };*/
     }, []);
-
     return (
         <div className="App">
             <header className="App-header">
-                <APIProvider apiKey={'AIzaSyCaHPO79ej6YBd5YOnyn5m0oCZneJm_yc0'}
+                <APIProvider apiKey={process.env.REACT_APP_GOOGLE_API_KEY}
                              onLoad={() => console.log('Maps API has loaded.')}>
                     <div className="map-container">
                         <Map
